@@ -13,14 +13,14 @@
     <h1 class="h1 ml-5 text-center">Celsius to fahrenheit calculator</h1>
 
     <form action="https://echo.htmlacademy.ru" class="calc-form d-flex
-    flex-column align-items-center">
-    <label class="d-flex mt-5 ml-4 mb-4 justify-content-center  align-items-center">
-      Celsius
-      <input type="number" step="any" class="ml-5 w-50" placeholder="number" required>
-    </label>
-    <p class="text-center mr-5">Fahrenheit<span class="result mr-5 border-dark"></span>F</p>
-    <button class="converter btn btn-primary">Calculate</button>
-  </form>
+    flex-column align-items-center" method="POST">
+      <label class="d-flex mt-5 ml-4 mb-4 justify-content-center  align-items-center">
+        Celsius
+        <input class="calc-display" step="any" name="calc" type="number" class="ml-5 w-50" placeholder="number">
+      </label>
+      <p class="text-center mr-4">Fahrenheit<span class="result ml-3 mr-5 border-dark"></span></p>
+      <button class="calc-button btn btn-primary" type="submit">Calculate</button>
+    </form>
 </div>
 
 
